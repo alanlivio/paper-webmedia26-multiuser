@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-Repository for the academic paper **NCL Users API: \texttt{gingaf} support and new proposed user attribute for \texttt{<rule>}**.
+Repository for the academic paper **NCL Users API: `gingaf` support and new proposed user attribute for `<rule>`**.
 
 - `paper/` — LaTeX source
 - `website/` — static webpage using Zensical
