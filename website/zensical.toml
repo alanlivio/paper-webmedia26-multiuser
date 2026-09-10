@@ -1,5 +1,5 @@
 [project]
-site_name = "gingaf-multiuser: Multi-User Context Synchronization and NCL Users API Implementation"
+site_name = "NCL Users API: gingaf support and new proposed user attribute for <rule>"
 site_description = "gingaf-multiuser paper and project website"
 site_author = "Alan L.V. Guedes"
 copyright = "Copyright &copy; 2026 The authors"

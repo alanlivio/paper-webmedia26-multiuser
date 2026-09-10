@@ -1,22 +1,32 @@
 ---
-title: "gingaf-multiuser: Multi-User Context Synchronization and NCL Users API Implementation"
+title: "NCL Users API: gingaf support and new proposed user attribute for <rule>"
 template: "home.html"
 hide:
   - navigation
 authors:
-  - name: Anonymous Author(s)
+  - name: Alan L. V. Guedes
+    institution: University of Reading
+  - name: Paulo Victor Borges
+    institution: PUC-Rio
+  - name: Daniel Moraes
+    institution: PUC-Rio
+  - name: Sergio Colcher
+    institution: PUC-Rio
 conference: "WTVDI 2026"
 links:
   - name: Paper
     url: main.pdf
     icon: ri:file-pdf-2-line
+  - name: Slides
+    url: slides/
+    icon: ri:slideshow-line
   - name: Software Code
     url: https://github.com/alanlivio/gingaf
     icon: ri:github-line
   - name: LaTeX/Website Code
     url: https://github.com/alanlivio/paper-gingaf-multiuser
     icon: ri:github-line
-description: "Multi-user context synchronization and NCL Users API implementation in TV 3.0."
+description: "NCL Users API: gingaf support and new proposed user attribute for <rule>."
 ---
 
 <div class="abstract-container" markdown="1">
@@ -42,12 +52,12 @@ Next-generation digital television standards (TV 3.0) require seamless multi-dev
 ## Citation
 
 ```bibtex
-@inproceedings{guedes2026gingafmultiuser,
-  title={gingaf-multiuser: Multi-User Context Synchronization and NCL Users API Implementation},
-  author={Guedes, Alan},
-  booktitle={Anais Estendidos do XXXII Simpósio Brasileiro de Sistemas Multimídia e Web (WTVDI 2026)},
-  pages={1--4},
-  year={2026},
-  doi={10.5753/webmedia.2026.gingaf-multiuser}
+@inproceedings{gingaf_multiuser2026,
+  author    = {Guedes, Alan L. V. and Borges, Paulo Victor and Moraes, Daniel and Colcher, Sergio},
+  title     = {NCL Users API: gingaf support and new proposed user attribute for <rule>},
+  booktitle = {Anais Estendidos do XXXII Simpósio Brasileiro de Sistemas Multimídia e Web (WTVDI 2026)},
+  location  = {Lavras, Brazil},
+  year      = {2026},
+  doi       = {10.5753/webmedia.2026.gingaf-multiuser}
 }
 ```

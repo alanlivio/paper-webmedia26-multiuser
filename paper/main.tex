@@ -18,6 +18,7 @@
 \usepackage{array}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+\hypersetup{urlcolor=black} 
 
 \lstset{
   basicstyle=\ttfamily\footnotesize,
@@ -98,7 +99,7 @@ Digital television systems worldwide are undergoing a fundamental transformation
 
 To overcome these structural limitations, the Brazilian Digital Terrestrial Television (SBTVD) Forum standardized the TV 3.0 specification~\cite{abnt_15608_4}, establishing the \textit{NCL Users API}. This standard defines explicit primitives for managing concurrent user profiles and binding causal hypermedia links to dynamic user properties. This paper introduces an open-source implementation of the NCL Users API in the cross-platform Ginga implementation \texttt{gingaf}~\cite{gingaf2026}. Built upon the headless logic package \texttt{ncl\_doc} and Flutter presentation layers, \texttt{gingaf} delivers centralized profile management, reactive property evaluation, and multi-device focus routing.
 
-To support reproducibility, the source code, unit tests, and demonstration videos are available at \textcolor{ACMDarkBlue}{\url{https://github.com/ginga-org-br/gingaf}}.
+To support reproducibility, the source code, unit tests, and demonstration videos are available at \textbf{\url{https://github.com/ginga-org-br/gingaf}}.
 
 The remainder of this paper is structured as follows. Section~\ref{sec:background} provides a background on the TV 3.0 Multiuser API. Section~\ref{sec:multiuser} describes the design and implementation of multi-user support in \texttt{gingaf}. Section~\ref{sec:rule_proposal} discusses the proposed user attribute for \texttt{<rule>}. Finally, Section~\ref{sec:remarks} presents our final remarks and outlines future work.
 
