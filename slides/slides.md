@@ -61,7 +61,7 @@ _header: ""
 # NCL Users API: gingaf Support and New Proposed User Attribute for &lt;rule&gt;
 
 **Alan L. V. Guedes**$^1$, **Paulo Victor Borges**$^2$, **Daniel Moraes**$^2$, **Sergio Colcher**$^2$
-$^1$Universidade de Reading, Reino Unido | $^2$PUC-Rio, Brasil
+$^1$University of Reading, UK | $^2$PUC-Rio, BR
 
 *XXXII Simpósio Brasileiro de Sistemas Multimídia e Web (WebMedia 2026)*
 
@@ -101,7 +101,7 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 # Contexto: A Mudança de Paradigma da TV 3.0
 
-**De STBs de Telespectador Único para Salas de Estar Multiusuário**
+**De STBs de telespectador único para salas de estar multiusuário**
 - Convergência broadcast-broadband, dispositivos de segunda tela e TV personalizada.
 - Múltiplos membros da família assistem à tela principal compartilhada acompanhados por smartphones e tablets.
 
@@ -131,7 +131,7 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 ---
 
-## NCL+links, NCL+grade_de_vídeos, NCL+embNCL e NCL+navegação
+## NCL com Links, Grade de Vídeos, NCL Embutido e Navegação
 
 <div class="grid-2x2">
   <div class="grid-card">
@@ -154,7 +154,7 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 ---
 
-## NCLua, HTML+CCWS, NCL+embHTML e NCL+multiusuário
+## NCLua, HTML+CCWS, HTML Embutido e Multiusuário
 
 <div class="grid-2x2">
   <div class="grid-card">
@@ -177,7 +177,7 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 ---
 
-## NCL+multiusuário
+## NCL Multiusuário
 
 <div class="grid-card" style="margin-top: 24px;">
   <img src="assets/gifs/multiuser_profile.gif" alt="multiuser_profile/main.ncl" style="max-height: 420px;" />
@@ -248,7 +248,7 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 ---
 
-## NCL+multiusuário (currentUser)
+## NCL Multiusuário (currentUser)
 
 <div class="grid-card" style="margin-top: 24px;">
   <img src="assets/gifs/multiuser_current.gif" alt="multiuser_current/main.ncl" style="max-height: 420px;" />
