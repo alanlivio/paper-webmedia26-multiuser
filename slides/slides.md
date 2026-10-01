@@ -187,28 +187,14 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 ---
 
 <!-- _class: invert -->
-<!-- _paginate: skip -->
 
 # Suporte Multiusuário no gingaf
 
 ---
 
-# Implementação no gingaf
+# Mídia Setting de Usuário: currentUser
 
-**Registro Centralizado de Perfis de Usuários**
-- Máquina de estados headless resolve e armazena em cache os perfis de telespectadores ativos.
-- Avaliação dinâmica de consultas JSON (`adult_query.json`).
-
-**Vinculação Reativa de Propriedades**
-- Atualiza automaticamente propriedades `<settings>` vinculadas quando perfis de usuário mudam ou realizam login.
-- Integração transparente com o agendamento de eventos do `ncl_doc`.
-
-**Entrega Multiplataforma**
-- Gerenciamento consistente de perfis em alvos desktop, móveis e web.
-
----
-
-# Mídia de Configurações de Usuário: currentUser
+**Atualiza automaticamente propriedades** `<media>` do typo Settings para o usuario
 
 ```xml
 <media id="uSettings" type="application/x-ncl-user-settings" user="currentUser">
@@ -221,7 +207,9 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 ---
 
-# NCLua Reativo via Link NCL
+# Mídia Setting de Usuário: currentUser
+
+## Exemplo de NCLua reativo ao usuário:
 
 ```xml
 <link xconnector="onBeginOrAttributionSet">
@@ -248,7 +236,7 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 ---
 
-## NCL Multiusuário (currentUser)
+## Exemplo de NCLua reativo ao usuario:
 
 <div class="grid-card" style="margin-top: 24px;">
   <img src="assets/gifs/multiuser_current.gif" alt="multiuser_current/main.ncl" style="max-height: 420px;" />
@@ -258,6 +246,9 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 ---
 
 # Base de Usuários e Perfis Declarativos
+
+- **Registro Centralizado**: Máquina de estados headless resolve e armazena em cache os perfis ativos.
+- **Seleção Dinâmica via JSON**: Avaliação de consultas declarativas (`adult_query.json`).
 
 ```xml
 <userBase>
@@ -314,15 +305,25 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 ---
 
-# Limitação da Abordagem Atual com Links Causais
+# Limitação da Abordagem com Links Causais
 
-**Alta Verbosidade e Código Repetitivo**
-- Avaliar propriedades de usuário requer a definição de elementos `<causalConnector>` customizados.
-- Necessita de `<compoundCondition>` com `<assessmentStatement>` para comparar variáveis.
-- Cada ramificação condicional exige definições separadas de `<link>`.
+- Conectores customizados com `<compoundCondition>` e `<assessmentStatement>` para cada teste.
+- Exige múltiplos `<link>` para apresentação condicional.
 
-**Sobrecarga Cognitiva**
-- Dispersa a lógica de seleção entre conectores, links e configurações em vez de agrupar alternativas.
+```xml
+<connectorBase>
+  <causalConnector id="onBeginTestVarStart">
+    <compoundCondition operator="and">
+      <simpleCondition role="onBegin"/>
+      <assessmentStatement comparator="eq">
+        <attributeAssessment role="var" attributeType="nodeProperty" eventType="attribution"/>
+        <valueAssessment value="$value"/>
+      </assessmentStatement>
+    </compoundCondition>
+    <simpleAction role="start"/>
+  </causalConnector>
+</connectorBase>
+```
 
 ---
 
