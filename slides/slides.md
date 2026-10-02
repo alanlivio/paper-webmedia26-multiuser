@@ -114,7 +114,7 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 # Padrão TV 3.0: A API de Usuários do NCL
 
 **Padronização**
-- Padronizada na norma SBTVD ABNT 15608-4 para a TV Digital de Nova Geração.
+- Padronizada na norma SBTVD ABNT 25608 para a TV Digital de Nova Geração.
 
 **Novos Elementos XML**
 - `<userBase>`: Contêiner para definições de perfis de usuários ativos.
