@@ -353,10 +353,11 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 # Considerações Finais
 
-- Implementação completa em código aberto da API de Usuários NCL da TV 3.0 SBTVD no `gingaf`.
-- Suporte arquitetural a perfis dinâmicos de usuário e avaliação reativa de propriedades.
-- Proposta inovadora estendendo `<rule>` no NCL com o atributo `user` para seleção concisa via `<switch>`.
-- Validado com casos de testes automatizados e cenários de aplicações multiusuário.
+**Contribuições Principais**:
+- **Implementação da API de Usuários NCL (TV 3.0)**: Suporte arquitetural em código aberto no `gingaf` com resolução dinâmica de perfis e vinculação reativa de propriedades.
+- **Extensão da Linguagem NCL**: Proposta do atributo `user` para o elemento `<rule>`, permitindo apresentação adaptativa e concisa via `<switch>`.
+
+**Validação**: Casos de testes automatizados e validação em cenários de aplicações multiusuário.
 
 ---
 
