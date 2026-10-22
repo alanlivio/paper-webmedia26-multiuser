@@ -135,19 +135,19 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 <div class="grid-2x2">
   <div class="grid-card">
-    <img src="assets/gifs/video.ncl.gif" alt="video.ncl" />
+    <img src="assets/gifs/video.ncl.gif" />
     <p>NCL com links básicos (<a href="https://ginga.org.br/gingaf/playground/?app=video.ncl">video.ncl</a>)</p>
   </div>
   <div class="grid-card">
-    <img src="assets/gifs/video_grid.ncl.gif" alt="video_grid.ncl" />
+    <img src="assets/gifs/video_grid.ncl.gif" />
     <p>NCL com grade de vídeos (<a href="https://ginga.org.br/gingaf/playground/?app=video_grid.ncl">video_grid.ncl</a>)</p>
   </div>
   <div class="grid-card">
-    <img src="assets/gifs/emb_ncl.ncl.gif" alt="emb_ncl.ncl" />
+    <img src="assets/gifs/emb_ncl.ncl.gif" />
     <p>NCL embutido em NCL (<a href="https://ginga.org.br/gingaf/playground/?app=emb_ncl.ncl">emb_ncl.ncl</a>)</p>
   </div>
   <div class="grid-card">
-    <img src="assets/gifs/focus_nav.ncl.gif" alt="focus_nav.ncl" />
+    <img src="assets/gifs/focus_nav.ncl.gif" />
     <p>NCL com navegação de foco e seleção (<a href="https://ginga.org.br/gingaf/playground/?app=focus_nav.ncl">focus_nav.ncl</a>)</p>
   </div>
 </div>
@@ -158,19 +158,19 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 <div class="grid-2x2">
   <div class="grid-card">
-    <img src="assets/gifs/lua_canvas.ncl.gif" alt="lua_canvas.ncl" />
+    <img src="assets/gifs/lua_canvas.ncl.gif" />
     <p>NCL com desenho em tela Lua e teclas (<a href="https://ginga.org.br/gingaf/playground/?app=lua_canvas.ncl">lua_canvas.ncl</a>)</p>
   </div>
   <div class="grid-card">
-    <img src="assets/gifs/current_service.html.gif" alt="current_service.html" />
+    <img src="assets/gifs/current_service.html.gif" />
     <p>HTML com CCWS /current-service/ (<a href="https://ginga.org.br/gingaf/playground/?app=current_service.html">current_service.html</a>)</p>
   </div>
   <div class="grid-card">
-    <img src="assets/gifs/emb_html.ncl.gif" alt="emb_html.ncl" />
+    <img src="assets/gifs/emb_html.ncl.gif" />
     <p>NCL com documento HTML embutido (<a href="https://ginga.org.br/gingaf/playground/?app=emb_html.ncl">emb_html.ncl</a>)</p>
   </div>
   <div class="grid-card">
-    <img src="assets/gifs/multiuser_profile.gif" alt="multiuser_profile/main.ncl" />
+    <img src="assets/gifs/multiuser_profile.gif" />
     <p>NCL com troca de perfil multiusuário e publicidade direcionada (<a href="https://ginga.org.br/gingaf/playground/?app=multiuser_profile/main.ncl">multiuser_profile/main.ncl</a>)</p>
   </div>
 </div>
@@ -180,7 +180,7 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 ## NCL Multiusuário
 
 <div class="grid-card" style="margin-top: 24px;">
-  <img src="assets/gifs/multiuser_profile.gif" alt="multiuser_profile/main.ncl" style="max-height: 420px;" />
+  <img src="assets/gifs/multiuser_profile.gif" style="max-height: 420px;" />
   <p style="margin-top: 14px; font-size: 22px;">NCL com troca de perfil multiusuário e publicidade direcionada (<a href="https://ginga.org.br/gingaf/playground/?app=multiuser_profile/main.ncl">multiuser_profile/main.ncl</a>)</p>
 </div>
 
@@ -239,7 +239,7 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 ## Exemplo de NCLua reativo ao usuario:
 
 <div class="grid-card" style="margin-top: 24px;">
-  <img src="assets/gifs/multiuser_current.gif" alt="multiuser_current/main.ncl" style="max-height: 420px;" />
+  <img src="assets/gifs/multiuser_current.gif" style="max-height: 420px;" />
   <p style="margin-top: 14px; font-size: 22px;">NCL com usuário atual e sincronização com Lua (<a href="https://ginga.org.br/gingaf/playground/?app=multiuser_current/main.ncl">multiuser_current/main.ncl</a>)</p>
 </div>
 
@@ -292,7 +292,7 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 # Caso de Uso: Publicidade Direcionada
 
 <div class="grid-card" style="margin-top: 24px;">
-  <img src="assets/gifs/multiuser_profile.gif" alt="multiuser_profile/main.ncl" style="max-height: 420px;" />
+  <img src="assets/gifs/multiuser_profile.gif" style="max-height: 420px;" />
   <p style="margin-top: 14px; font-size: 22px;">NCL com troca de perfil multiusuário e publicidade direcionada (<a href="https://ginga.org.br/gingaf/playground/?app=multiuser_profile/main.ncl">multiuser_profile/main.ncl</a>)</p>
 </div>
 
