@@ -15,7 +15,7 @@ authors:
 conference: "WTVDI 2026"
 links:
   - name: Paper
-    url: main.pdf
+    url: assets/pdfs/main.pdf
     icon: ri:file-pdf-2-line
   - name: Slides
     url: slides/

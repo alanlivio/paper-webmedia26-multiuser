@@ -2,14 +2,17 @@
 site_name = "NCL Users API: gingaf support and new proposed user attribute for <rule>"
 site_description = "gingaf-multiuser paper and project website"
 site_author = "Alan L.V. Guedes"
+site_url = "https://alanlivio.github.io/paper-webmedia26-multiuser/"
 copyright = "Copyright &copy; 2026 The authors"
+docs_dir = "website/docs"
+site_dir = "website/site"
 extra_css = ["stylesheets/extra.css"]
 
 [project.plugins]
 search = { enabled = false }
 
 [project.theme]
-custom_dir = "overrides"
+custom_dir = "website/overrides"
 features = ["navigation.instant", "content.code.copy", "content.code.select"]
 
 [project.theme.font]
