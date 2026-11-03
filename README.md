@@ -1,7 +1,7 @@
 # paper-webmedia26-multiuser
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![DOI](https://img.shields.io/badge/DOI-10.5753%2Fwebmedia.2026.gingaf--multiuser-blue.svg)](https://doi.org/10.5753/webmedia.2026.gingaf-multiuser)
+[![DOI](https://img.shields.io/badge/DOI-10.5753%2Fwebmedia__estendido.2026.34167-blue.svg)](https://doi.org/10.5753/webmedia_estendido.2026.34167)
 
 Website for the paper **NCL Users API: `gingaf` support and new proposed user attribute for `<rule>`**, published at the **XXXII Simpósio Brasileiro de Sistemas Multimídia e Web (WebMedia 2026)**.
 
@@ -20,6 +20,10 @@ Do `make help` to see all available commands. The deployment to GitHub Pages is 
   booktitle = {Anais Estendidos do XXXII Simpósio Brasileiro de Sistemas Multimídia e Web (WTVDI 2026)},
   location  = {Lavras, Brazil},
   year      = {2026},
-  doi       = {10.5753/webmedia.2026.gingaf-multiuser}
+  pages     = {261--263},
+  publisher = {SBC},
+  address   = {Porto Alegre, RS, Brasil},
+  doi       = {10.5753/webmedia_estendido.2026.34167},
+  url       = {https://doi.org/10.5753/webmedia_estendido.2026.34167}
 }
 ```
