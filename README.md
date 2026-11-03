@@ -5,9 +5,9 @@
 
 Website for the paper **NCL Users API: `gingaf` support and new proposed user attribute for `<rule>`**, published at the **XXXII Simpósio Brasileiro de Sistemas Multimídia e Web (WebMedia 2026)**.
 
-- `src/` — LaTeX source
+- `paper/` — LaTeX source
 - `slides/` — presentation slides using Marp
-- `website/` — static webpage using Zensical
+- `docs/` — static webpage using Zensical
 
 Do `make help` to see all available commands. The deployment to GitHub Pages is handled by [deploy.yml](.github/workflows/deploy.yml).
 
