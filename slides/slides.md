@@ -3,82 +3,35 @@ marp: true
 theme: default
 paginate: true
 header: 'NCL Users API & Rule Extension — WTVDI / WebMedia 2026'
+style: |
+  @import url('https://cdn.jsdelivr.net/gh/alanlivio/marp-utils@main/marp-utils.css');
+  pre {
+    font-size: 15px;
+    line-height: 1.25;
+  }
 ---
-
-<style>
-.grayscale {
-  filter: grayscale(100%);
-}
-.grid-2x2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 14px 28px;
-  width: 100%;
-  margin-top: 8px;
-}
-.grid-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.grid-card img {
-  width: 100%;
-  max-height: 165px;
-  object-fit: contain;
-  border-radius: 6px;
-  border: 1px solid transparent;
-  background-color: transparent;
-  box-shadow: none;
-}
-.grid-card p {
-  margin: 6px 0 0 0;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.3;
-  color: #1f2328;
-}
-.grid-card a {
-  color: #0969da;
-  font-weight: 700;
-  text-decoration: underline;
-}
-pre {
-  font-size: 15px;
-  line-height: 1.25;
-}
-</style>
 
 <!--
 _paginate: false
 _header: ""
+_class: cols-3-1 vcenter
 -->
 
-<div style="display: grid; grid-template-columns: 3fr 1fr; align-items: center;">
+- # NCL Users API: gingaf Support and New Proposed User Attribute for &lt;rule&gt;
 
-<div>
+  **Alan L. V. Guedes**$^1$, **Paulo Victor Borges**$^2$, **Daniel Moraes**$^2$, **Sergio Colcher**$^2$
+  $^1$University of Reading, UK | $^2$PUC-Rio, BR
 
-# NCL Users API: gingaf Support and New Proposed User Attribute for &lt;rule&gt;
+  *XXXII Simpósio Brasileiro de Sistemas Multimídia e Web (WebMedia 2026)*
 
-**Alan L. V. Guedes**$^1$, **Paulo Victor Borges**$^2$, **Daniel Moraes**$^2$, **Sergio Colcher**$^2$
-$^1$University of Reading, UK | $^2$PUC-Rio, BR
+  **Website do Artigo (slides, código, demo)**:
+  https://alanlivio.github.io/paper-webmedia26-multiuser/
 
-*XXXII Simpósio Brasileiro de Sistemas Multimídia e Web (WebMedia 2026)*
+- ![h:160 grayscale](assets/uor.svg)
 
-**Website do Artigo (slides, código, demo)**:
-https://alanlivio.github.io/paper-webmedia26-multiuser/
+  ![h:100 grayscale](assets/puc-rio.svg)
 
-</div>
-
-<div style="display: flex; flex-direction: column; justify-content: center;">
-
-<img src="assets/uor.svg" height="200" class="grayscale" />
-<img src="assets/puc-rio.svg" height="120" class="grayscale" />
-<img src="assets/qrcode.svg" height="250" />
-
-</div>
-
-</div>
+  ![h:200](assets/qrcode.svg)
 
 ---
 
@@ -131,58 +84,48 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 ---
 
+<!-- _class: grid-2x2 center -->
+
 ## NCL com Links, Grade de Vídeos, NCL Embutido e Navegação
 
-<div class="grid-2x2">
-  <div class="grid-card">
-    <img src="assets/gifs/video.ncl.gif" />
-    <p>NCL com links básicos (<a href="https://ginga.org.br/gingaf/playground/?app=video.ncl">video.ncl</a>)</p>
-  </div>
-  <div class="grid-card">
-    <img src="assets/gifs/video_grid.ncl.gif" />
-    <p>NCL com grade de vídeos (<a href="https://ginga.org.br/gingaf/playground/?app=video_grid.ncl">video_grid.ncl</a>)</p>
-  </div>
-  <div class="grid-card">
-    <img src="assets/gifs/emb_ncl.ncl.gif" />
-    <p>NCL embutido em NCL (<a href="https://ginga.org.br/gingaf/playground/?app=emb_ncl.ncl">emb_ncl.ncl</a>)</p>
-  </div>
-  <div class="grid-card">
-    <img src="assets/gifs/focus_nav.ncl.gif" />
-    <p>NCL com navegação de foco e seleção (<a href="https://ginga.org.br/gingaf/playground/?app=focus_nav.ncl">focus_nav.ncl</a>)</p>
-  </div>
-</div>
+- ![h:155](assets/gifs/video.ncl.gif)
+  NCL com links básicos ([video.ncl](https://ginga.org.br/gingaf/playground/?app=video.ncl))
+
+- ![h:155](assets/gifs/video_grid.ncl.gif)
+  NCL com grade de vídeos ([video_grid.ncl](https://ginga.org.br/gingaf/playground/?app=video_grid.ncl))
+
+- ![h:155](assets/gifs/emb_ncl.ncl.gif)
+  NCL embutido em NCL ([emb_ncl.ncl](https://ginga.org.br/gingaf/playground/?app=emb_ncl.ncl))
+
+- ![h:155](assets/gifs/focus_nav.ncl.gif)
+  NCL com navegação de foco e seleção ([focus_nav.ncl](https://ginga.org.br/gingaf/playground/?app=focus_nav.ncl))
 
 ---
+
+<!-- _class: grid-2x2 center -->
 
 ## NCLua, HTML+CCWS, HTML Embutido e Multiusuário
 
-<div class="grid-2x2">
-  <div class="grid-card">
-    <img src="assets/gifs/lua_canvas.ncl.gif" />
-    <p>NCL com desenho em tela Lua e teclas (<a href="https://ginga.org.br/gingaf/playground/?app=lua_canvas.ncl">lua_canvas.ncl</a>)</p>
-  </div>
-  <div class="grid-card">
-    <img src="assets/gifs/current_service.html.gif" />
-    <p>HTML com CCWS /current-service/ (<a href="https://ginga.org.br/gingaf/playground/?app=current_service.html">current_service.html</a>)</p>
-  </div>
-  <div class="grid-card">
-    <img src="assets/gifs/emb_html.ncl.gif" />
-    <p>NCL com documento HTML embutido (<a href="https://ginga.org.br/gingaf/playground/?app=emb_html.ncl">emb_html.ncl</a>)</p>
-  </div>
-  <div class="grid-card">
-    <img src="assets/gifs/multiuser_profile.gif" />
-    <p>NCL com troca de perfil multiusuário e publicidade direcionada (<a href="https://ginga.org.br/gingaf/playground/?app=multiuser_profile/main.ncl">multiuser_profile/main.ncl</a>)</p>
-  </div>
-</div>
+- ![h:155](assets/gifs/lua_canvas.ncl.gif)
+  NCL com desenho em tela Lua e teclas ([lua_canvas.ncl](https://ginga.org.br/gingaf/playground/?app=lua_canvas.ncl))
+
+- ![h:155](assets/gifs/current_service.html.gif)
+  HTML com CCWS /current-service/ ([current_service.html](https://ginga.org.br/gingaf/playground/?app=current_service.html))
+
+- ![h:155](assets/gifs/emb_html.ncl.gif)
+  NCL com documento HTML embutido ([emb_html.ncl](https://ginga.org.br/gingaf/playground/?app=emb_html.ncl))
+
+- ![h:155](assets/gifs/multiuser_profile.gif)
+  NCL com troca de perfil multiusuário ([multiuser_profile/main.ncl](https://ginga.org.br/gingaf/playground/?app=multiuser_profile/main.ncl))
 
 ---
 
+<!-- _class: center -->
+
 ## NCL Multiusuário
 
-<div class="grid-card" style="margin-top: 24px;">
-  <img src="assets/gifs/multiuser_profile.gif" style="max-height: 420px;" />
-  <p style="margin-top: 14px; font-size: 22px;">NCL com troca de perfil multiusuário e publicidade direcionada (<a href="https://ginga.org.br/gingaf/playground/?app=multiuser_profile/main.ncl">multiuser_profile/main.ncl</a>)</p>
-</div>
+- ![h:400 center](assets/gifs/multiuser_profile.gif)
+  NCL com troca de perfil multiusuário e publicidade direcionada ([multiuser_profile/main.ncl](https://ginga.org.br/gingaf/playground/?app=multiuser_profile/main.ncl))
 
 ---
 
@@ -194,7 +137,7 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 # Mídia Setting de Usuário: currentUser
 
-**Atualiza automaticamente propriedades** `<media>` do typo Settings para o usuario
+**Atualiza automaticamente propriedades** `<media>` do tipo Settings para o usuário
 
 ```xml
 <media id="uSettings" type="application/x-ncl-user-settings" user="currentUser">
@@ -236,12 +179,12 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 ---
 
-## Exemplo de NCLua reativo ao usuario:
+<!-- _class: center -->
 
-<div class="grid-card" style="margin-top: 24px;">
-  <img src="assets/gifs/multiuser_current.gif" style="max-height: 420px;" />
-  <p style="margin-top: 14px; font-size: 22px;">NCL com usuário atual e sincronização com Lua (<a href="https://ginga.org.br/gingaf/playground/?app=multiuser_current/main.ncl">multiuser_current/main.ncl</a>)</p>
-</div>
+## Exemplo de NCLua reativo ao usuário:
+
+- ![h:400 center](assets/gifs/multiuser_current.gif)
+  NCL com usuário atual e sincronização com Lua ([multiuser_current/main.ncl](https://ginga.org.br/gingaf/playground/?app=multiuser_current/main.ncl))
 
 ---
 
@@ -270,31 +213,26 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 
 ---
 
+<!-- _class: cols-2 center -->
+
 # Caso de Uso: Publicidade Direcionada
 
-**Adaptação Personalizada de Conteúdo**
-- **Sem Usuário Adulto Masculino Ativo**: Exibe dinamicamente o banner comercial geral (`ad_general.png`).
-- **Com Usuário Adulto Masculino Ativo**: Seleciona e renderiza dinamicamente o banner direcionado (`ad_male.png`).
+**Adaptação Personalizada de Conteúdo**: exibe o anúncio geral (`ad_general.png`) sem usuário adulto masculino ativo, ou o anúncio direcionado (`ad_male.png`) quando ativo.
 
-<div style="display: flex; gap: 24px; justify-content: center; margin-top: 15px;">
-  <div style="text-align: center;">
-    <img src="assets/image1.png" height="270" style="border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);" />
-    <p style="font-size: 15px; margin-top: 6px; color: #555;">(a) Sem usuário adulto masculino (anúncio geral)</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="assets/image2.png" height="270" style="border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);" />
-    <p style="font-size: 15px; margin-top: 6px; color: #555;">(b) Com usuário adulto masculino (anúncio direcionado)</p>
-  </div>
-</div>
+- ![h:250](assets/image1.png)
+  (a) Sem usuário adulto masculino (anúncio geral)
+
+- ![h:250](assets/image2.png)
+  (b) Com usuário adulto masculino (anúncio direcionado)
 
 ---
 
+<!-- _class: center -->
+
 # Caso de Uso: Publicidade Direcionada
 
-<div class="grid-card" style="margin-top: 24px;">
-  <img src="assets/gifs/multiuser_profile.gif" style="max-height: 420px;" />
-  <p style="margin-top: 14px; font-size: 22px;">NCL com troca de perfil multiusuário e publicidade direcionada (<a href="https://ginga.org.br/gingaf/playground/?app=multiuser_profile/main.ncl">multiuser_profile/main.ncl</a>)</p>
-</div>
+- ![h:400 center](assets/gifs/multiuser_profile.gif)
+  NCL com troca de perfil multiusuário e publicidade direcionada ([multiuser_profile/main.ncl](https://ginga.org.br/gingaf/playground/?app=multiuser_profile/main.ncl))
 
 ---
 
@@ -364,26 +302,17 @@ https://alanlivio.github.io/paper-webmedia26-multiuser/
 <!--
 _paginate: false
 _header: ""
+_class: cols-2 vcenter
 -->
 
 # Obrigado!
 
-<div style="display: grid; grid-template-columns: 3fr 2fr; align-items: start;">
+- ### Dúvidas e Discussão
 
-<div>
+  **Repositório**: https://github.com/ginga-org-br/gingaf
 
-### Dúvidas e Discussão
+  **Sobre o Ginga**: https://ginga.org.br
 
-- **Repositório**: https://github.com/ginga-org-br/gingaf
-- **Sobre o Ginga**: https://ginga.org.br
-- **Contato**: `a.guedes@reading.ac.uk` | `danielmoraes@telemidia.puc-rio.br`
+  **Contato**: `a.guedes@reading.ac.uk` | `danielmoraes@telemidia.puc-rio.br`
 
-</div>
-
-<div style="display: flex; justify-content: center; align-items: flex-start;">
-
-<img src="assets/portal1.png" />
-
-</div>
-
-</div>
+- ![](assets/portal1.png)
